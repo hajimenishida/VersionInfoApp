@@ -1,5 +1,0 @@
-<Project>
-  <PropertyGroup>
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-  </PropertyGroup>
-</Project>
