@@ -6,7 +6,6 @@
 
 ## 設定・便利機能
 - **`Directory.Build.props`** で `GitCommitIdShort` をバージョン情報に含める
-- **GitHub Actions** のセットアップ（CI/CD）
 
 ## 使い方
 1. `git clone https://github.com/hajimenishida/VersionInfoApp.git`
