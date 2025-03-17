@@ -8,12 +8,6 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <VersionSuffix>ci-$(GitCommitIdShort)</VersionSuffix>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <AssemblyInformationalVersion>1.0.0+$(SourceRevisionId)</AssemblyInformationalVersion>
   </PropertyGroup>
