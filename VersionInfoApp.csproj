@@ -1,0 +1,115 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>VersionInfoApp</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-cf675f4993b5f113f6ba76c53e42a5394b9cc1fd.idx" />
+    <None Include=".git\objects\pack\pack-cf675f4993b5f113f6ba76c53e42a5394b9cc1fd.pack" />
+    <None Include=".git\objects\pack\pack-cf675f4993b5f113f6ba76c53e42a5394b9cc1fd.rev" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VersionInfoApp\FileContentIndex\03eaede9-0ea6-4106-8342-03f044042a8a.vsidx" />
+    <None Include=".vs\VersionInfoApp\FileContentIndex\7d31c06f-148a-40f2-9ff4-983eedf12bf7.vsidx" />
+    <None Include=".vs\VersionInfoApp\FileContentIndex\cdc360ff-5adc-4ae4-840f-7df5c628b4d1.vsidx" />
+    <None Include=".vs\VersionInfoApp\v17\.suo" />
+    <None Include=".vs\VersionInfoApp\v17\.wsuo" />
+    <None Include=".vs\VersionInfoApp\v17\DocumentLayout.backup.json" />
+    <None Include=".vs\VersionInfoApp\v17\DocumentLayout.json" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="README.md" />
+    <None Include="VersionInfoApp.Tests\obj\Debug\net8.0\VersionInfoApp.Tests.AssemblyInfoInputs.cache" />
+    <None Include="VersionInfoApp.Tests\obj\Debug\net8.0\VersionInfoApp.Tests.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="VersionInfoApp.Tests\obj\Release\net8.0\VersionInfoApp.Tests.AssemblyInfoInputs.cache" />
+    <None Include="VersionInfoApp.Tests\obj\Release\net8.0\VersionInfoApp.Tests.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="VersionInfoApp.Tests\VersionInfoApp.Tests.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="VersionInfo.cs" />
+    <Compile Include="VersionInfoApp.Tests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="VersionInfoApp.Tests\obj\Debug\net8.0\VersionInfoApp.Tests.AssemblyInfo.cs" />
+    <Compile Include="VersionInfoApp.Tests\obj\Debug\net8.0\VersionInfoApp.Tests.GlobalUsings.g.cs" />
+    <Compile Include="VersionInfoApp.Tests\obj\Release\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="VersionInfoApp.Tests\obj\Release\net8.0\VersionInfoApp.Tests.AssemblyInfo.cs" />
+    <Compile Include="VersionInfoApp.Tests\obj\Release\net8.0\VersionInfoApp.Tests.GlobalUsings.g.cs" />
+    <Compile Include="VersionInfoApp.Tests\UnitTest1.cs" />
+    <Compile Include="VersionInfoApp.Tests\VersionInfoTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="VersionInfoApp.Tests\bin\Debug\net8.0\" />
+    <Folder Include="VersionInfoApp.Tests\bin\Release\net8.0\" />
+    <Folder Include="VersionInfoApp.Tests\obj\Debug\net8.0\refint\" />
+    <Folder Include="VersionInfoApp.Tests\obj\Debug\net8.0\ref\" />
+    <Folder Include="VersionInfoApp.Tests\obj\Release\net8.0\refint\" />
+    <Folder Include="VersionInfoApp.Tests\obj\Release\net8.0\ref\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
